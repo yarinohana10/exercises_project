@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="light.css" />
+    <title>Document</title>
+    <!-- ע"מ להשתמש בaxios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="appTv.js"></script>
+</head>
+
+<body>
+    <article id="id_lightwindow" class="light_window">
+        <div class="light_inside">
+            <!-- פה נשנה את התמונה שתיפתח לפי השם שהמשתמש יכניס וגם השם בתגית H2 -->
+            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/319/797706.jpg" class="col-4 float-start me-2">
+            <h2>batman and spiderman</h2>
+            <div>
+                <strong>Date:</strong><span id="id_light_rating"></span>
+                <strong>Rating:</strong><span id="id_light_rating"></span>
+            </div>
+            <p>
+                <strong>Plot:</strong><span id="id_light_plot"></span>
+            </p>
+            <button id="btn_close" class="btn btn-danger">Close</button>
+        </div>
+    </article>
+    <!-- py-2 = padding 8px -->
+    <header class="container-fluid bg-dark text-light py-2">
+        <div class="container">
+            <div class="row">
+                <!-- אומר שהרוחב שלו לפי התוכן col-auto -->
+                <div class="logo col-auto">
+                    <h2>My logo</h2>
+                </div>
+                <!-- אומר שהגודל שלו הוא 1/3 ממצב 798 ומעלה md-4 וה d-flex מלשון דיספליי פלקסכדי לשים את האינפוט והכפתור אחד ליד השני -->
+                <nav class="col-md-4 d-flex">
+                    <input id="id_input" placeholder="search for tv show..." type="search" class="form-control">
+                    <button id="search_btn" class="btn btn-info">search</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container py-4">
+        <h1 class="display-4">List of Tv shows</h1>
+        <div id="id_parent" class="row g-4">
+            <!-- <article class="col-md-4"> -->
+            <!--פותר את הבעיה שיש לפלוט בתגית בת שהתגית אבא תתיחס אליה מבחינת גובה overflow-hidden -->
+            <!-- <div class="border shadow p-2 h-100 overflow-hidden">
+                    <img src="" class="float-start me-2 col-4" >
+                    <h2>Tv show name</h2>
+                    <div>year:</div>
+                    <div>season:</div>
+                    <div>Rating::</div>
+                    <button class="btn btn-dark">More info</button>
+                </div>
+            </article> -->
+        </div>
+    </main>
+
+</body>
+
+</html>

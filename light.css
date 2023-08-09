@@ -1,0 +1,26 @@
+/* האזור השחור כאשר יפתח לנו החלונית */
+.light_window{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* גורם לזה שזה יגלל(יוכל לרדת)  ה position:fixed */
+    position: fixed;
+    /* מרחק מציר הויי top  */
+    top:0;
+    left: 0;
+    /* לא יופיע אם לא נקרא לו ע"י פונק ונשנה את ה none */
+    display: none;
+    /* מכוון לגובה  align-items */
+    align-items: center;
+    /* מגדיר את הרוחב justify */
+    justify-content: center;
+}
+/* החלון הקטן שיש בו את התמונה  והמאפיינים של אותה סדרה של התמונה */
+.light_inside{
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 3px 3px 3px 3px black;
+    padding: 8px;
+    border-radius: 8px;
+}
